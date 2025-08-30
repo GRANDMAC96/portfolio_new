@@ -1,3 +1,5 @@
+/* Global styling */
+
 /* Reset box sizing so that all elements' boxes are calculated using the element's content, padding and border 
 instead of just the content */
 * {
@@ -8,6 +10,12 @@ instead of just the content */
     font-size: x-large;
     margin: 0px;
 }
+
+  a {
+    color: inherit;         /* Inherits the text color from the parent element */
+    text-decoration: none;  /* Removes the underline */
+  }
+
 
 /* Grid container for full page */
 
