@@ -18,8 +18,93 @@ instead of just the content */
     width: 100%;
     /*  Can't set height to 100% as this makes the height too large to make the page comfortably viewable. 
     Instead set the max height to 900px */
-    max-height: 900px;
+    height: 900px;
     /* adds a 10px gap between each grid element and you can easily see this */
-    grid-template: repeat(12, 1fr) / repeat(16, 1fr);
-    /* Grid template created with 8 equal sized rows and 12 equal sized columns */
+    grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+    /* Grid template created with 12 equal sized rows and 12 equal sized columns */
+    gap: 10px;
 }
+
+/* Grid components */
+
+.aboutme {
+    grid-area: 1 / 1 / 5 / 5;
+    background-color: blue;
+}
+
+.me {
+    grid-area: 1 / 5 / 5 / 9;
+    background-color: blue;
+}
+
+.contactme {
+    grid-area: 1 / 9 / 5 / 13;
+    background-color: blue;
+
+}
+
+/* .aboutme {
+    grid-area: ;
+    background-color: blue;
+
+} */
+
+/* .aboutme {
+    grid-area: ;
+    background-color: blue;
+
+} */
+
+/* .aboutme {
+    grid-area: ;
+    background-color: blue;
+
+} */
+
+/* .aboutme {
+    grid-area: ;
+    background-color: blue;
+
+} */
+
+/* .aboutme {
+    grid-area: ;
+    background-color: blue;
+
+} */
+
+/* .aboutme {
+    grid-area: ;
+    background-color: blue;
+
+} */
+
+/* .aboutme {
+    grid-area: ;
+    background-color: blue;
+
+} */
+
+/* .aboutme {
+    grid-area: ;
+    background-color: blue;
+
+} */
+
+/* .aboutme {
+    grid-area: ;
+    background-color: blue;
+
+} */
+
+/* .aboutme {
+    grid-area: ;
+    background-color: blue;
+
+} */
+
+/* .aboutme {
+    grid-area: ;
+    background-color: blue;
+
+} */
