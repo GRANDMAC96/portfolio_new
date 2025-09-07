@@ -9,3 +9,17 @@ instead of just the content */
     font-style: normal;
     font-size: x-large;
 }
+
+/* Grid container for full page */
+
+.maingrid {
+    display: grid;
+    /* Give width of page 100% so that it always fits the width of the viewing device */
+    width: 100%;
+    /*  Can't set height to 100% as this makes the height too large to make the page comfortably viewable. 
+    Instead set the max height to 900px */
+    max-height: 900px;
+    /* adds a 10px gap between each grid element and you can easily see this */
+    grid-template: repeat(12, 1fr) / repeat(16, 1fr);
+    /* Grid template created with 8 equal sized rows and 12 equal sized columns */
+}
