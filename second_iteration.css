@@ -18,9 +18,9 @@ instead of just the content */
     width: 100%;
     /*  Can't set height to 100% as this makes the height too large to make the page comfortably viewable. 
     Instead set the max height to 900px */
-    height: 900px;
+    height: 100vh;
     /* adds a 10px gap between each grid element and you can easily see this */
-    grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+    grid-template: repeat(9, 1fr) / repeat(12, 1fr);
     /* Grid template created with 12 equal sized rows and 12 equal sized columns */
     gap: 10px;
 }
@@ -43,68 +43,68 @@ instead of just the content */
 
 }
 
-/* .aboutme {
-    grid-area: ;
+.projects {
+    grid-area: 5 / 1 / 7 / 7;
     background-color: blue;
 
-} */
+}
 
-/* .aboutme {
-    grid-area: ;
+.other {
+    grid-area: 5 / 7 / 7 / 13;
     background-color: blue;
 
-} */
+}
 
-/* .aboutme {
-    grid-area: ;
+.skills {
+    grid-area: 7 / 1 / 8 / 13;
     background-color: blue;
 
-} */
+}
 
-/* .aboutme {
-    grid-area: ;
+.html {
+    grid-area: 8 / 1 / 9 / 3;
     background-color: blue;
 
-} */
+}
 
-/* .aboutme {
-    grid-area: ;
+.react {
+    grid-area: 8 / 3 / 9 / 5;
     background-color: blue;
 
-} */
+}
 
-/* .aboutme {
-    grid-area: ;
+.node {
+    grid-area: 8 / 5 / 9 / 7;
     background-color: blue;
 
-} */
+}
 
-/* .aboutme {
-    grid-area: ;
+.jsx {
+    grid-area: 8 / 7 / 9 / 9;
     background-color: blue;
 
-} */
+}
 
-/* .aboutme {
-    grid-area: ;
+.css {
+    grid-area: 8 / 9 / 9 / 11;
     background-color: blue;
 
-} */
+}
 
-/* .aboutme {
-    grid-area: ;
+.git {
+    grid-area: 8 / 11 / 9 / 13;
     background-color: blue;
 
-} */
+}
 
-/* .aboutme {
-    grid-area: ;
+.github {
+    grid-area: 9 / 5 / 10 / 7;
     background-color: blue;
 
-} */
+}
 
-/* .aboutme {
-    grid-area: ;
+.javascript {
+    grid-area: 9 / 7 / 10 / 9;
     background-color: blue;
 
-} */
+}
