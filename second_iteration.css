@@ -31,10 +31,13 @@ instead of just the content */
 .aboutme {
     grid-area: 1 / 1 / 5 / 5;
     background-color: rgb(107, 107, 109);
-     display: flex;
-  justify-content: center; /* horizontal */
-  align-items: center;     /* vertical */
-  text-align: center;      /* for multiline text */
+    display: flex;
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    /* vertical */
+    text-align: center;
+    /* for multiline text */
 }
 
 .aboutme:hover {
@@ -57,10 +60,13 @@ instead of just the content */
 .contactme {
     grid-area: 1 / 9 / 5 / 13;
     background-color: rgb(107, 107, 109);
-   display: flex;
-  justify-content: center; /* horizontal */
-  align-items: center;     /* vertical */
-  text-align: center;      /* for multiline text */
+    display: flex;
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    /* vertical */
+    text-align: center;
+    /* for multiline text */
 }
 
 .contactme:hover {
@@ -72,10 +78,13 @@ instead of just the content */
 .projects {
     grid-area: 5 / 1 / 7 / 7;
     background-color: rgb(107, 107, 109);
-  display: flex;
-  justify-content: center; /* horizontal */
-  align-items: center;     /* vertical */
-  text-align: center;      /* for multiline text */
+    display: flex;
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    /* vertical */
+    text-align: center;
+    /* for multiline text */
 }
 
 .projects:hover {
@@ -87,10 +96,13 @@ instead of just the content */
 .resume {
     grid-area: 5 / 7 / 7 / 13;
     background-color: rgb(107, 107, 109);
-      display: flex;
-  justify-content: center; /* horizontal */
-  align-items: center;     /* vertical */
-  text-align: center;      /* for multiline text */
+    display: flex;
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    /* vertical */
+    text-align: center;
+    /* for multiline text */
 }
 
 .resume:hover {
@@ -102,10 +114,13 @@ instead of just the content */
 .skills {
     grid-area: 7 / 1 / 8 / 13;
     background-color: rgb(107, 107, 109);
-      display: flex;
-  justify-content: center; /* horizontal */
-  align-items: center;     /* vertical */
-  text-align: center;      /* for multiline text */
+    display: flex;
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    /* vertical */
+    text-align: center;
+    /* for multiline text */
 }
 
 .skills:hover {
@@ -116,7 +131,12 @@ instead of just the content */
 
 .html {
     grid-area: 8 / 1 / 9 / 3;
-    background-color: rgb(107, 107, 109);
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    /* vertical */
+    text-align: center;
+    /* for multiline text */
 }
 
 .html:hover {
@@ -127,77 +147,28 @@ instead of just the content */
 
 .react {
     grid-area: 8 / 3 / 9 / 5;
-    background-color: rgb(107, 107, 109);
-}
-
-.react:hover {
-    background-color: #e0e0ff;
-    border-color: #6666ff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .node {
     grid-area: 8 / 5 / 9 / 7;
-    background-color: rgb(107, 107, 109);
-}
-
-.node:hover {
-    background-color: #e0e0ff;
-    border-color: #6666ff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .jsx {
     grid-area: 8 / 7 / 9 / 9;
-    background-color: rgb(107, 107, 109);
-}
-
-.jsx:hover {
-    background-color: #e0e0ff;
-    border-color: #6666ff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .css {
     grid-area: 8 / 9 / 9 / 11;
-    background-color: rgb(107, 107, 109);
-}
-
-.css:hover {
-    background-color: #e0e0ff;
-    border-color: #6666ff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .git {
     grid-area: 8 / 11 / 9 / 13;
-    background-color: rgb(107, 107, 109);
-}
-
-.git:hover {
-    background-color: #e0e0ff;
-    border-color: #6666ff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .github {
     grid-area: 9 / 5 / 10 / 7;
-    background-color: rgb(107, 107, 109);
-}
-
-.github:hover {
-    background-color: #e0e0ff;
-    border-color: #6666ff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .javascript {
     grid-area: 9 / 7 / 10 / 9;
-    background-color: rgb(107, 107, 109);
-}
-
-.javascript:hover {
-    background-color: #e0e0ff;
-    border-color: #6666ff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
