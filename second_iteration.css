@@ -14,9 +14,6 @@ instead of just the content */
 img {
     max-width: 100%;
     height: 100%;
-    /* display: block;
-    border-radius: 6px;
-    object-fit: cover; */
 }
 
 /* Grid container for full page */
@@ -28,16 +25,16 @@ img {
     /*  Can't set height to 100% as this makes the height too large to make the page comfortably viewable. 
     Instead set the max height to 900px */
     height: 100vh;
-    /* adds a 10px gap between each grid element and you can easily see this */
-    grid-template: repeat(9, 1fr) / repeat(12, 1fr);
-    /* Grid template created with 12 equal sized rows and 12 equal sized columns */
-    gap: 10px;
+    /* adds a 12px gap between each grid element and you can easily see this */
+    grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+    /* Grid template created with 13 equal sized rows and 12 equal sized columns */
+    gap: 12px;
 }
 
 /* Grid components */
 
 .aboutme {
-    grid-area: 1 / 1 / 5 / 5;
+    grid-area: 1 / 1 / 6 / 5;
     background-color: rgb(107, 107, 109);
     display: flex;
     justify-content: center;
@@ -46,6 +43,7 @@ img {
     /* vertical */
     text-align: center;
     /* for multiline text */
+    font-size: 350%
 }
 
 .aboutme:hover {
@@ -55,8 +53,14 @@ img {
 }
 
 .me {
-    grid-area: 1 / 5 / 5 / 9;
+    grid-area: 1 / 5 / 6 / 9;
     background-color: rgb(107, 107, 109);
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    /* vertical */
+    text-align: center;
+    /* for multiline text */
 }
 
 .me:hover {
@@ -66,7 +70,7 @@ img {
 }
 
 .contactme {
-    grid-area: 1 / 9 / 5 / 13;
+    grid-area: 1 / 9 / 6 / 13;
     background-color: rgb(107, 107, 109);
     display: flex;
     justify-content: center;
@@ -75,6 +79,7 @@ img {
     /* vertical */
     text-align: center;
     /* for multiline text */
+    font-size: 350%;
 }
 
 .contactme:hover {
@@ -84,7 +89,7 @@ img {
 }
 
 .projects {
-    grid-area: 5 / 1 / 7 / 7;
+    grid-area: 6 / 1 / 8 / 7;
     background-color: rgb(107, 107, 109);
     display: flex;
     justify-content: center;
@@ -93,6 +98,7 @@ img {
     /* vertical */
     text-align: center;
     /* for multiline text */
+    font-size: 350%;
 }
 
 .projects:hover {
@@ -102,7 +108,7 @@ img {
 }
 
 .resume {
-    grid-area: 5 / 7 / 7 / 13;
+    grid-area: 6 / 7 / 8 / 13;
     background-color: rgb(107, 107, 109);
     display: flex;
     justify-content: center;
@@ -111,6 +117,7 @@ img {
     /* vertical */
     text-align: center;
     /* for multiline text */
+    font-size: 350%;
 }
 
 .resume:hover {
@@ -120,7 +127,7 @@ img {
 }
 
 .skills {
-    grid-area: 7 / 1 / 8 / 13;
+    grid-area: 8 / 1 / 9 / 13;
     background-color: rgb(107, 107, 109);
     display: flex;
     justify-content: center;
@@ -138,57 +145,104 @@ img {
 }
 
 .html {
-    grid-area: 8 / 1 / 9 / 3;
+    grid-area: 9 / 1 / 12 / 3;
     justify-content: center;
     /* horizontal */
     align-items: center;
     /* vertical */
     text-align: center;
     /* for multiline text */
-    margin: 30px
+    margin: 12px;
 }
 
 .react {
-    grid-area: 8 / 3 / 9 / 5;
-    margin: 30px
+    grid-area: 9 / 3 / 11 / 5;
+    margin: 12px;
 }
 
 .node {
-    grid-area: 8 / 5 / 9 / 7;
-    margin: 30px
+    grid-area: 9 / 5 / 11 / 7;
+    margin: 12px;
 }
 
 .jsx {
-    grid-area: 8 / 7 / 9 / 9;
-    margin: 30px
+    grid-area: 9 / 7 / 11 / 9;
+    margin: 12px;
 }
 
 .css {
-    grid-area: 8 / 9 / 9 / 11;
-    margin: 30px
+    grid-area: 9 / 9 / 11 / 11;
+    margin: 12px;
 }
 
 .git {
-    grid-area: 8 / 11 / 9 / 13;
-    margin: 30px
+    grid-area: 9 / 11 / 11 / 13;
+    margin: 12px;
 }
 
 .mysql {
-    grid-area: 9 / 3 / 10 / 5;
-    margin: 30px
+    grid-area: 11 / 3 / 13 / 5;
+    margin: 12px;
 }
 
 .redux {
-    grid-area: 9 / 9 / 10 / 11;
-    margin: 30px
+    grid-area: 11 / 9 / 13 / 11;
+    margin: 12px;
 }
 
 .github {
-    grid-area: 9 / 5 / 10 / 7;
-    margin: 30px
+    grid-area: 11 / 5 / 13 / 7;
+    margin: 12px;
 }
 
 .javascript {
-    grid-area: 9 / 7 / 10 / 9;
-    margin: 30px
+    grid-area: 11 / 7 / 13 / 9;
+    margin: 12px;
+}
+
+
+
+.flip-card {
+    perspective: 1000px;
+    /* This adds the 3D effect */
+    grid-area: 1 / 1 / 6 / 5;
+
+}
+
+/* This container is needed to position the front and back side */
+.flip-inner {
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.flip-card.flipped .flip-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 350%;
+    background-color: rgb(107, 107, 109);
+    border: 1px solid #ccc;
+}
+
+.flip-back {
+    background-color: rgb(107, 107, 109);
+    transform: rotateY(180deg);
+}
+
+.flip-front:hover, .flip-back:hover {
+    background-color: #f0f0f0;
+    border-color: #6666ff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
