@@ -79,13 +79,32 @@ img {
     /* vertical */
     text-align: center;
     /* for multiline text */
-    font-size: 350%;
+    flex-direction: column;
 }
 
-.contactme:hover {
+/* .contactmetext {
+    font-size: 350%;
+    background-color: rgb(107, 107, 109);
+
+}
+
+.contactmeimage {
+    width: 25%;
+    height: 25%;
+    background-color: rgb(107, 107, 109);
+
+} */
+
+/* .contactme:hover {
     background-color: #e0e0ff;
     border-color: #6666ff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+} */
+.linkedinimage {
+    height: 25%;
+    width: 80%;
+    background-color: rgb(107, 107, 109);
+
 }
 
 .projects {
@@ -241,7 +260,8 @@ img {
     transform: rotateY(180deg);
 }
 
-.flip-front:hover, .flip-back:hover {
+.flip-front:hover,
+.flip-back:hover {
     background-color: #f0f0f0;
     border-color: #6666ff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
