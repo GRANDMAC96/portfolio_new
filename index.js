@@ -5,5 +5,3 @@ document.getElementById("flip-card").addEventListener("click", function() {
     console.log("hello");
   });
 
-
-

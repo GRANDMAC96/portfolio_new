@@ -44,7 +44,7 @@ img {
     /* for multiline text */
 }
 
-.contactme {
+#contactme {
     grid-area: 1 / 9 / 6 / 13;
     background-color: rgb(107, 107, 109);
     display: flex;
@@ -57,11 +57,19 @@ img {
     flex-direction: column;
 }
 
+#contactme:hover #linkedinicon {
+    background-color: #e0e0ff;
+}
+#contactme:hover {
+    background-color: #e0e0ff;
+    border-color: #6666ff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
 
-.linkedinimage {
-    height: 25%;
-    width: 80%;
+#linkedinicon {
     background-color: rgb(107, 107, 109);
+    height: 25%;
+    width: 65%;
 }
 
 .projects {
