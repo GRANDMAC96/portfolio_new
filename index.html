@@ -4,45 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Iteration Portfolio</title>
     <link rel="stylesheet" type="text/css" href="./index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald:wght@200..700&display=swap"
-        rel="stylesheet">
-    <title>Figma Portfolio</title>
+
 </head>
 
-<body class="maingrid">
-    <nav class="navleft">My Portfolio</nav>
-    <div class="navSpace"></div>
-    <nav class="navrightleft">
-        <a href="./index.html" class="navButton">Home</a>
-    </nav>
-    <nav class="navrightright">
-        <div class="navButton">My Projects</div>
-    </nav>
-    <div class="image"></div>
-    <header class="header">
-        About me ******* Next task is to create layout like lots of square boxes. It needs to be simple and each box should highlight/raise when mouse is hovered over it.
-    </header>
-    <div class="me">I am a driven coder who has a keen eye for detail and I am excited to join and be part of the
-        coding world. I have a natural curiosity in all things tech which is what attracted me to this line
-        of work. My experience at Develop Me was extremely positive and I really enjoyed both the
-        Front-end and Back-end parts of the course and in particular Laravel and React. I look
-        forward to working with people who share my enthusiasm for coding. I am currently working
-        for a company called moove.to based in Cardiff working remotely with Javascript, Laravel and
-        PHP. We set up our website on an AWS EC2 instance and you can view what we’ve done at
-        https://staging.moove.to.
+<body>
+    <div class="maingrid">
+        <div id="flip-card">
+            <div class="flip-inner">
+                <div class="flip-front">About me</div>
+                <div id="aboutme" class="flip-back">I am a driven coder who has a keen eye for detail and I am excited
+                    to join and be
+                    part of the coding world. I have a natural curiosity in all things tech which is what attracted me
+                    to this line of work. My experience at Develop Me was extremely positive and I really enjoyed both
+                    the Front-end and Back-end parts of the course and in particular React. I look forward to working
+                    with people who share my enthusiasm for coding.</div>
+            </div>
+        </div>
+        <div class="me">
+            <img src="./resources/me.jpeg" alt="Icon">
+        </div>
+        <!-- <div class="contactme">
+            <img class="linkedinicon" src="./resources/LI-Logo.png" alt="Icon">
+        </div> -->
+        <a id="contactme" href="https://www.linkedin.com/in/henry-macfarlane-a811a116a/">
+            <img id="linkedinicon" src="./resources/LI-Logo.png" alt="Icon">
+        </a>
+        <div class="projects">Projects</div>
+        <div class="resume">Resume</div>
+        <div class="skills">SKILLS</div>
+        <div class="html">
+            <img src="./resources/104494_html5_html_icon.svg" alt="Icon">
+        </div>
+        <div class="react">
+            <img src="./resources/1174949_js_react js_logo_react_react native_icon.svg" alt="Icon">
+        </div>
+        <div class="node">
+            <img src="./resources/8546986_node_icon.svg" alt="Icon">
+        </div>
+        <div class="jsx">
+            <img src="./resources/9040357_filetype_jsx_icon.svg" alt="Icon">
+        </div>
+        <div class="css">
+            <img src="./resources/css.square.svg" alt="Icon">
+        </div>
+        <div class="git">
+            <img src="./resources/git-svgrepo-com.svg" alt="Icon">
+        </div>
+        <div class="mysql">
+            <img src="./resources/logo-mysql-170x115.png" alt="Icon">
+        </div>
+        <div class="redux">
+            <img src="./resources/redux-svgrepo-com.svg" alt="Icon">
+        </div>
+        <div class="github">
+            <img src="./resources/github-mark.png" alt="Icon">
+        </div>
+        <div class="javascript">
+            <img src="./resources/icons8-javascript.svg" alt="Icon">
+        </div>
     </div>
-    <div class="skills">Skills</div>
-    <img class="icon1" src="./resources/104494_html5_html_icon.svg" alt="HTML5">
-    <img class="icon2" src="./resources/css.square.svg" alt="CSS">
-    <img class="icon3" src="./resources/8546986_node_icon.svg" alt="node">
-    <img class="icon4" src="./resources/9040357_filetype_jsx_icon.svg" alt="Github">
-    <img class="icon5" src="./resources/1174949_js_react js_logo_react_react native_icon.svg" alt="React">
-    <img class="icon6" src="./resources/git-svgrepo-com.svg" alt="Git">
-    <img class="icon7" src="./resources/github-mark.png" alt="Github">
-    <img class="icon8" src="./resources/icons8-javascript.svg" alt="">
+    <script src="./index.js"></script>
 
 </body>
 

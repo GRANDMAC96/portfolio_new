@@ -7,15 +7,14 @@ instead of just the content */
     font-family: "Fjalla One", serif;
     font-weight: 700;
     font-style: normal;
-    font-size: x-large;
-    margin: 0px;
+    font-size: large;
+    background-color: rgb(183, 180, 180);
 }
 
-  a {
-    color: inherit;         /* Inherits the text color from the parent element */
-    text-decoration: none;  /* Removes the underline */
-  }
-
+img {
+    max-width: 100%;
+    height: 100%;
+}
 
 /* Grid container for full page */
 
@@ -25,133 +24,231 @@ instead of just the content */
     width: 100%;
     /*  Can't set height to 100% as this makes the height too large to make the page comfortably viewable. 
     Instead set the max height to 900px */
-    max-height: 900px;
-    /* adds a 10px gap between each grid element and you can easily see this */
-    grid-template: repeat(8, 1fr) / repeat(12, 1fr);
-    /* Grid template created with 8 equal sized rows and 12 equal sized columns */
+    height: 100vh;
+    /* adds a 12px gap between each grid element and you can easily see this */
+    grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+    /* Grid template created with 13 equal sized rows and 12 equal sized columns */
+    gap: 12px;
 }
 
-/* Nav section */
-
-.navleft {
-    /* Give element its grid area */
-    grid-area: 1 / 1 / 2 / 3;
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.navSpace {
-    grid-area: 1 / 3 / 2 / 10;
-    background-color: #333;
-}
-
-.navrightleft {
-    /* Give element its grid area */
-    grid-area: 1 / 9 / 2 / 11;
-    background-color: #333;
-    /* Use diplay flex on navright so that its childen sit side by side */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-}
-
-.navrightright {
-    /* Give element its grid area */
-    grid-area: 1 / 11 / 2 / 13;
-    background-color: #333;
-    /* Use diplay flex on navright so that its childen sit side by side */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-}
-
-.navrightright:hover {
-    background-color: rgb(59, 166, 166);
-    color: black;
-    /* width: 100%;
-    height: 100%; */
-}
-
-.navrightleft:hover {
-    background-color: rgb(59, 166, 166);
-    color: black;
-    /* width: 100%;
-    height: 100%; */
-}
-
-
-/* Image of me */
-.image {
-    grid-area: 3 / 9 / 5 / 12;
-    background-image: url('./resources/PAN467738.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-/* About me section */
-.header {
-    grid-area: 3 / 2 / 4 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* Grid components */
 
 .me {
-    grid-area: 4 / 2 / 5 / 9;
-    display: flex;
+    grid-area: 1 / 5 / 6 / 9;
+    background-color: rgb(107, 107, 109);
     justify-content: center;
+    /* horizontal */
     align-items: center;
+    /* vertical */
+    text-align: center;
+    /* for multiline text */
 }
 
-/* Skills section */
+#contactme {
+    grid-area: 1 / 9 / 6 / 13;
+    background-color: rgb(107, 107, 109);
+    display: flex;
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    /* vertical */
+    text-align: center;
+    /* for multiline text */
+    flex-direction: column;
+}
+
+#contactme:hover #linkedinicon {
+    background-color: #e0e0ff;
+}
+#contactme:hover {
+    background-color: #e0e0ff;
+    border-color: #6666ff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#linkedinicon {
+    background-color: rgb(107, 107, 109);
+    height: 25%;
+    width: 65%;
+}
+
+.projects {
+    grid-area: 6 / 1 / 8 / 7;
+    background-color: rgb(107, 107, 109);
+    display: flex;
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    /* vertical */
+    text-align: center;
+    /* for multiline text */
+    font-size: 350%;
+}
+
+.projects:hover {
+    background-color: #e0e0ff;
+    border-color: #6666ff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.resume {
+    grid-area: 6 / 7 / 8 / 13;
+    background-color: rgb(107, 107, 109);
+    display: flex;
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    /* vertical */
+    text-align: center;
+    /* for multiline text */
+    font-size: 350%;
+}
+
+.resume:hover {
+    background-color: #e0e0ff;
+    border-color: #6666ff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
 
 .skills {
-    grid-area: 5 / 2 / 6 / 5;
+    grid-area: 8 / 1 / 9 / 13;
+    background-color: rgb(107, 107, 109);
     display: flex;
     justify-content: center;
+    /* horizontal */
     align-items: center;
+    /* vertical */
+    text-align: center;
+    /* for multiline text */
 }
 
-.icon1 {
-    grid-area: 6 / 2 / 7 / 4;
+.skills:hover {
+    background-color: #e0e0ff;
+    border-color: #6666ff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.icon2 {
-    grid-area: 6 / 4 / 7 / 6;
+.html {
+    grid-area: 9 / 1 / 12 / 3;
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    /* vertical */
+    text-align: center;
+    /* for multiline text */
+    margin: 12px;
 }
 
-.icon3 {
-    grid-area: 6 / 6 / 7 / 8;
+.react {
+    grid-area: 9 / 3 / 11 / 5;
+    margin: 12px;
 }
 
-.icon4 {
-    grid-area: 6 / 8 / 7 / 10;
+.node {
+    grid-area: 9 / 5 / 11 / 7;
+    margin: 12px;
 }
 
-.icon5 {
-    grid-area: 7 / 2 / 8 / 4;
+.jsx {
+    grid-area: 9 / 7 / 11 / 9;
+    margin: 12px;
 }
 
-.icon6 {
-    grid-area: 7 / 4 / 8 / 6;
+.css {
+    grid-area: 9 / 9 / 11 / 11;
+    margin: 12px;
 }
 
-.icon7 {
-    grid-area: 7 / 6 / 8 / 8;
+.git {
+    grid-area: 9 / 11 / 11 / 13;
+    margin: 12px;
 }
 
-.icon8 {
-    grid-area: 7 / 8 / 8 / 10;
+.mysql {
+    grid-area: 11 / 3 / 13 / 5;
+    margin: 12px;
 }
 
+.redux {
+    grid-area: 11 / 9 / 13 / 11;
+    margin: 12px;
+}
 
-img {
-    width: 4rem;
-    height: 4rem;
+.github {
+    grid-area: 11 / 5 / 13 / 7;
+    margin: 12px;
+}
+
+.javascript {
+    grid-area: 11 / 7 / 13 / 9;
+    margin: 12px;
+}
+
+/* FLIP CARD */
+
+/* This is the flip card main container */
+#flip-card {
+    perspective: 1000px;
+    /* This adds the 3D effect */
+    grid-area: 1 / 1 / 6 / 5;
+}
+
+/* This container is needed to position the front and back side of the "aboutme" grid container */
+.flip-inner {
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* This selector flips the card when the flipped class is added to the tag which has the flip-card id */
+/* It rotates horizontally over the y axis */
+#flip-card.flipped .flip-inner {
+    transform: rotateY(180deg);
+}
+
+/* THe below styles the front and back of the about me sections */
+.flip-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* Prevents the back of the front from showing when it shouldn't.*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 350%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background-color: rgb(107, 107, 109);
+    border: 1px solid #ccc;
+}
+
+.flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* Prevents the back of the front from showing when it shouldn't.*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background-color: rgb(107, 107, 109);
+    border: 1px solid #ccc;
+}
+
+.flip-back {
+    background-color: rgb(107, 107, 109);
+    transform: rotateY(180deg);
+}
+
+.flip-front:hover,
+.flip-back:hover {
+    background-color: #f0f0f0;
+    border-color: #6666ff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
