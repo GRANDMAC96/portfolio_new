@@ -11,6 +11,11 @@ instead of just the content */
     background-color: rgb(183, 180, 180);
 }
 
+a {
+  text-decoration: none;  /* Removes underline */
+  color: inherit;         /* Inherits text color from parent */
+}
+
 img {
     max-width: 100%;
     height: 100%;
