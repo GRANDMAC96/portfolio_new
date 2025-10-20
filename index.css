@@ -91,7 +91,7 @@ img {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.resume {
+#resume {
     grid-area: 6 / 7 / 8 / 13;
     background-color: rgb(107, 107, 109);
     display: flex;
@@ -101,10 +101,14 @@ img {
     /* vertical */
     text-align: center;
     /* for multiline text */
+}
+
+#resumetext {
+    background-color: rgb(107, 107, 109);
     font-size: 350%;
 }
 
-.resume:hover {
+#resume:hover {
     background-color: #e0e0ff;
     border-color: #6666ff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
